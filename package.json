@@ -11,6 +11,6 @@
     "build": "npm run build --workspaces",
     "start": "npm run start --workspaces",
     "lint": "npm run lint --workspaces",
-    "render-build": "npm install && npm run db:generate --workspace=backend && npm run build --workspace=frontend"
+    "render-build": "npm ci && npm run db:generate --workspace=backend && npm run build --workspace=frontend"
   }
 }
