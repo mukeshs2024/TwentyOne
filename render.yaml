@@ -2,8 +2,9 @@ services:
   - type: web
     name: twentyone-app
     env: node
+    branch: main
     buildCommand: npm run render-build
-    startCommand: npm run start
+    startCommand: npm run start --workspace=frontend
     envVars:
       - key: NODE_ENV
         value: production
